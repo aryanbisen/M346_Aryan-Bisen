@@ -14,6 +14,9 @@
 
 ## Security-Group: Liste der Inbound-Regeln.
 
+![image](https://github.com/user-attachments/assets/9d330e0f-6446-4c47-b10f-679b4f066efc)
+
+
 # b) Lab 4.2 - S3
 
 ## Liste der Buckets
