@@ -3,4 +3,4 @@ Screenshot der Subnetzten:
 
 Zwei definierte IPs:
 - 172.31.40.40/20
-- 172.31.60.60/2
+- 172.31.60.60/20
