@@ -6,3 +6,5 @@
 ## Inboundregeln DB-Server-SG:
 ![image](https://github.com/user-attachments/assets/09a20c62-fe25-42a4-8e5b-2a9c584fe8a3)
 
+## Liste der Elastic IPs
+![image](https://github.com/user-attachments/assets/4b2d62a7-d99c-4947-9b8b-2bb303f07ec8)
