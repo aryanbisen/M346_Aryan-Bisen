@@ -24,3 +24,6 @@
 ## Webserver
 ![image](https://github.com/user-attachments/assets/312c8b15-f604-4beb-bec2-6a2770d03fa5)
 
+## DB PHP
+
+![image](https://github.com/user-attachments/assets/b83c361a-dfec-492b-b670-abf8fd68e080)
