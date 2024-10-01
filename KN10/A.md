@@ -73,11 +73,12 @@ Ausserdem ist die Bedienung von SAAS einfacher, wenn man jedoch mehr Erfahrung m
 Wenn man SaaS nimmt muss man weniger Wissen von "Behind the scenes" haben. SaaS ist empfehlenswert weil man dort eine eher günstige, benutzerfreundliche und leicht integrierbare Lösung für mittelgroße Unternehmen hat. SaaS braucht weniger Wartung und ist schneller einsatzbereit, was den Aufwand für IT-Ressourcen minimiert. Ausserdem ist die Bedienung von SaaS einfacher, wenn man jedoch mehr Erfahrung mit den verschiedenen Service Modellen hat würde ich mich für IAAS entscheiden, weil man dort mehr Einfluss auf die Konfiguration und Anpassung der Infrastruktur hat und es billiger ist. Jedoch muss man bedenken, dass man mehr Arbeit hat.
 
 # B) Interpretation der Resultate
-### Wie unterscheiden sich die Verschiedene Angebote?
-Die Angebote unterschieden sich stark. Bei IaaS kann man sehr vieles Anpassen. Je weiter man in die Service modelle rein geht desto weniger Freiheit hat man und desto teurer werden sie, da sehr viel Arbeit durch den Anbieter übernhmen werden muss. Deshalb ist Salceforce zum Beispiel viel teurer. Jedoch kann es weniger teuer im Vergleich für die Firma sein, da man viele Mitarbeiter spart.
+### Wie unterscheiden sich die Verschiedene Angebote? Wieso ist eines teurer?
+Die Angebote unterschieden sich stark. Bei IaaS kann man sehr vieles Anpassen. Je weiter man in die Service modelle rein geht desto weniger Freiheit hat man und desto teurer werden sie, da sehr viel Arbeit durch den Anbieter übernhmen werden muss. Deshalb ist Salceforce zum Beispiel viel teurer. Jedoch kann es weniger teuer im Vergleich für die Firma sein, da man viele Mitarbeiter spart. SaaS braucht auch weniger Wartung und kann so kosten reduzieren... Der IaaS ist dann geeignet wenn man nicht nur auf den Inhalt der Applikation sondern auch die äusseren Modellen kontrollieren möchte. Dafür muss man die nötige Zeit und Wissen haben und bereit sein den Aufwand zu betreiben...
 
 ### Welches ist das billigste?
 Die IAAS-Optionen.
  
 Zoho CRM ist ein Spezialfall und ziemlich günstig für ein SAAS. Erklärung dazu: bei "Erklärung zur Auswahl von Zoro".
+
 
