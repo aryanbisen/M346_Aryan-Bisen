@@ -1,0 +1,15 @@
+#cloud-config
+users: # Liste der Benutzer, die konfiguriert werden sollen
+  - name: ubuntu # Der Name des Benutzers ist "ubuntu"
+    sudo: ALL=(ALL) NOPASSWD:ALL # Sudo-Rechte ohne Passwort abzufragen
+    groups: users, admin # Wird zu den Gruppen users und adnim hinzugefügt
+    home: /home/ubuntu # Home-Verzeichnis des users
+    shell: /bin/bash # Bash als Shell
+    ssh_authorized_keys: # Authorisierte ssh-keys
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQI2m662K7Yi55M4TETIz2DCd4GpmlZYFcciEoYP6L5jzbGUbaNGLqJ8F2cMoon+y0Th2uOLyyVx9TyJFIBFHhZ6c+Vt+PvWRefxUb7l+KySPQfdod2GcnMi7ENxmwd/o74HuAp8KSE/d0r8OMFFqQ2IEJnX/yRMi27RX2pLc/tNcoDp3tR2gvGFQdYmaTQoNUqRV/t2Q9dzJu9/Gjn1iTSO5KlfvWcdHrhIKKoJ0Jh+N8cHEkLjrjvek/XFA00Q2ms62iBcDsII9Yra7KU4ctCW1GbVGiXwexE+bcC/mhuOk0UND5MU7D58c/5K9YBj308kuSYNgZV5ORIvr0CqQX max aws-key # SSH-Key
+ssh_pwauth: false # Password auth deaktiviert. Man kann nur mit SSH key zugreifen
+disable_root: false # Der Root-Benutzer bleibt aktiviert -> Er hat alle Rechte
+package_update: true # Updatet vor der Installation
+packages: # Pakete, die installiert werden sollen.
+  - curl # Package name curl (Datenübertragung)
+  - wget # Tool zum Herunterladen der Dateien über das Internet
