@@ -16,4 +16,3 @@ package_update: true
 packages:
   - curl
   - wget
-hat Kontextmenü
