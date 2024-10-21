@@ -1,0 +1,37 @@
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      # Mein öffentlicher Schlüssel
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCgo4+neyXXLQVeNLzG4SXuYHRX38rFpiwhBzp67mBfyuw8FH89l/xaLUhk/fz3g3NTcYolYpeOgLsqCZ0+yEM01bMmSFnmsckaMUnfyDIDiF1XRr8z2pCMrxYxWj3Tri4R0WButCUWcECrXtjkNO0WOJbXJj7OZ/N6ZAOtUaeJglm2JnDdDoPXClwIKGGV2XC/dg8dKJRedtF8NKd/otrH92+zV72261kHMrPJ34yjs7PPhEjeAodBxnPGX7Ug+OTXiu1F4Gwf6W0zd4gwLAztKLdFY0bzsCO8o5seyVqowkJ1k2RKA97XPvIFi2sAlvGmvXG/+RPh9ktWCvCPrclv aws-key # SSH-Key
+      # Öffentlicher Schlüssel der Lehrperson (Nussle)
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key
+ssh_pwauth: false
+disable_root: false
+package_update: true
+packages:
+  - curl
+  - wget
+  - apache2
+  - php
+  - libapache2-mod-php
+  - mariadb-server
+  - php-mysqli
+ 
+runcmd:
+  - sudo apt update
+  - sudo apt install -y apache2
+  - sudo apt install -y php
+  - sudo apt install -y libapache2-mod-php
+  - sudo apt install -y mariadb-server
+  - sudo apt install -y php-mysqli
+  - sudo mysql -sfu root -e "GRANT ALL ON *.* TO 'admin'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;"
+  - sudo systemctl restart mariadb.service
+  - sudo systemctl restart apache2
+  - cd /home/ubuntu
+  - git clone https://gitlab.com/ch-tbz-it/Stud/m346/m346scripts.git .
+  - sudo cp ./m346scripts/KN01/*.php /var/www/html/
