@@ -1,0 +1,46 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+  - apache2
+  - php
+  - libapache2-mod-php
+  - php-mysqli
+  - git
+  - adminer
+
+write_files:
+  - path: /var/www/html/db.php
+    permissions: "0644"
+    content: |
+      <?php
+      //database
+      $servername = "172.31.16.60";
+      $username = "admin";
+      $password = "password";
+      $dbname = "mysql";
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      // Check connection
+      if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+      }
+      $sql = "select Host, User from mysql.user;";
+      $result = $conn->query($sql);
+      while($row = $result->fetch_assoc()){
+          echo($row["Host"] . " / " . $row["User"] . "<br />");
+      }
+      ?>
+
+  - path: /var/www/html/info.php
+    permissions: "0644"
+    content: |
+      <?php
+      // Show all information, defaults to INFO_ALL
+      phpinfo();
+      ?>
+
+runcmd:
+  - sudo a2enmod rewrite
+  - sudo a2enconf adminer
+  - sudo systemctl restart apache2

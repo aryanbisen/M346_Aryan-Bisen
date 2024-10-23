@@ -1,0 +1,9 @@
+#cloud-config
+package_update: true
+packages:
+  - mariadb-server
+ 
+runcmd:
+  - sudo sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf
+  - sudo systemctl restart mariadb
+  - echo "GRANT ALL ON *.* TO 'admin'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;" | mysql -u root
