@@ -1,7 +1,9 @@
 
-
 ### Das Feld "Key pairassigned at launch":
-![image](https://github.com/user-attachments/assets/f93a0e3f-3281-472f-9810-5d8d52c07c45)
+![image](https://github.com/user-attachments/assets/a9df1157-345b-4f63-b5c6-9711638869a7)
+
 ### Verwendung des ersten Schlüssels:
-![image](https://github.com/user-attachments/assets/0a8d648a-3012-4d36-96e3-129389710aaa)
+![image](https://github.com/user-attachments/assets/c5b9ddd0-e0a4-4273-a7bd-abf3fdd5b3ee)
+
 ### Verwendung des zweiten Schlüssels:
+![image](https://github.com/user-attachments/assets/5b1f0560-c3dc-474c-8886-9280ffbd2be4)
