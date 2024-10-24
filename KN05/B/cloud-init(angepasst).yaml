@@ -6,7 +6,8 @@ users: # Liste der Benutzer, die konfiguriert werden sollen
     home: /home/ubuntu # Home-Verzeichnis des users
     shell: /bin/bash # Bash als Shell
     ssh_authorized_keys: # Authorisierte ssh-keys
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQI2m662K7Yi55M4TETIz2DCd4GpmlZYFcciEoYP6L5jzbGUbaNGLqJ8F2cMoon+y0Th2uOLyyVx9TyJFIBFHhZ6c+Vt+PvWRefxUb7l+KySPQfdod2GcnMi7ENxmwd/o74HuAp8KSE/d0r8OMFFqQ2IEJnX/yRMi27RX2pLc/tNcoDp3tR2gvGFQdYmaTQoNUqRV/t2Q9dzJu9/Gjn1iTSO5KlfvWcdHrhIKKoJ0Jh+N8cHEkLjrjvek/XFA00Q2ms62iBcDsII9Yra7KU4ctCW1GbVGiXwexE+bcC/mhuOk0UND5MU7D58c/5K9YBj308kuSYNgZV5ORIvr0CqQX max aws-key # SSH-Key
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCgo4+neyXXLQVeNLzG4SXuYHRX38rFpiwhBzp67mBfyuw8FH89l/xaLUhk/fz3g3NTcYolYpeOgLsqCZ0+yEM01bMmSFnmsckaMUnfyDIDiF1XRr8z2pCMrxYxWj3Tri4R0WButCUWcECrXtjkNO0WOJbXJj7OZ/N6ZAOtUaeJglm2JnDdDoPXClwIKGGV2XC/dg8dKJRedtF8NKd/otrH92+zV72261kHMrPJ34yjs7PPhEjeAodBxnPGX7Ug+OTXiu1F4Gwf6W0zd4gwLAztKLdFY0bzsCO8o5seyVqowkJ1k2RKA97XPvIFi2sAlvGmvXG/+RPh9ktWCvCPrclv
+      - ssh-rsa AAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD
 ssh_pwauth: false # Password auth deaktiviert. Man kann nur mit SSH key zugreifen
 disable_root: false # Der Root-Benutzer bleibt aktiviert -> Er hat alle Rechte
 package_update: true # Updatet vor der Installation
