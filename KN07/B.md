@@ -1,15 +1,22 @@
-![image](https://github.com/user-attachments/assets/4162a030-62fa-4c9f-a499-a526c65423b0)
+## Bereich 1
 
-![image](https://github.com/user-attachments/assets/a0c2feae-bf19-4ccf-8825-3fa76fce09dd)
+![image](https://github.com/user-attachments/assets/c9eb752b-7668-49a6-95bf-5c796022ef0c)
 
-![image](https://github.com/user-attachments/assets/d953c8e9-d88d-4a06-8de6-2d0f382b90d6)
+## Bereich 2 & 3
 
-![image](https://github.com/user-attachments/assets/49b5b381-736c-4399-961b-f93c90cf732f)
-![image](https://github.com/user-attachments/assets/c0b40883-4ee8-4fb9-893d-f6d02bb16e54)
+![image](https://github.com/user-attachments/assets/13edeba7-57d4-4330-a877-e3ab78fb67d6)
 
-![image](https://github.com/user-attachments/assets/b9960aae-a739-43ff-8585-9feb4577ba5a)
-![image](https://github.com/user-attachments/assets/3ac5ba75-8d1d-4331-b59f-405cda93a0d5)
+## Bereich 4
 
+![image](https://github.com/user-attachments/assets/64376e9c-99a9-4ee3-9dec-1fed98309605)
+![image](https://github.com/user-attachments/assets/a725310a-261a-4ff5-9839-f950dca00d6c)
 
-### Congratulations
-![image](https://github.com/user-attachments/assets/7c4ad9d2-7a86-4d52-bb24-216ce4d841b3)
+## Bereich 5
+
+![image](https://github.com/user-attachments/assets/6040a907-f66e-485c-bae4-74a7a5c4ae43)
+![image](https://github.com/user-attachments/assets/ed76eae4-4047-4b6b-a6f7-dba3e1587a60)
+
+## Aufruf der erfolgreichen Umgebung
+
+![image](https://github.com/user-attachments/assets/13de7971-e35b-41ca-83c1-7cc70a0a3454)
+
