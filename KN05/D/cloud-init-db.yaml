@@ -13,6 +13,6 @@ packages:
   - mariadb-server
  
 runcmd:
-  - sudo sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf # FIle zum Localhost
+  - sudo sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf # Der Befehl ersetzt alle Vorkommen von 127.0.0.1 durch 0.0.0.0 in der Datei 50-server.cnf. sed ist zum ersetzen.
   - echo "GRANT ALL ON *.* TO 'admin'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;" | mysql -u root
   - sudo systemctl restart mariadb
